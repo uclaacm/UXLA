@@ -38,3 +38,7 @@ In order to keep the project directory simple, the repository does not include a
 This will tell 11ty to inspect the `package.json` file and install all neccesary modules. Once you have done that, you can build and run the website:
 
 `npx @11ty/eleventy --serve`
+
+Go to your web browser and access `http://localhost:8080/`, and you should see the website up and running. Press `Ctrl + C` to stop the website.
+
+
