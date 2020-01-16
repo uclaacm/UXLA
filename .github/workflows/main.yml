@@ -1,4 +1,4 @@
-name: ZEIT
+name: ZEIT dev
 
 on: [push]
 
