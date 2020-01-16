@@ -24,20 +24,20 @@ Also, since we are using Git to manage versions, you will need to have [Git inst
 In your terminal, go to the directory you want to create the project folder. 
 Clone the GitHub repository by running:
 
-`git clone https://github.com/uclaacm/LearnUX.git`
+```git clone https://github.com/uclaacm/LearnUX.git```
 
 This should create a new directory called `LearnUX`
 Move into the directory:
 
-`cd LearnUX`
+```cd LearnUX```
 
 In order to keep the project directory simple, the repository does not include all the modules you need to run 11ty. To install them, run:
 
-`npm install --save-dev @11ty/eleventy`
+```npm install --save-dev @11ty/eleventy```
 
 This will tell 11ty to inspect the `package.json` file and install all neccesary modules. Once you have done that, you can build and run the website:
 
-`npx @11ty/eleventy --serve`
+```npx @11ty/eleventy --serve```
 
 Go to your web browser and access `http://localhost:8080/`, and you should see the website up and running. Press `Ctrl + C` to stop the website.
 
