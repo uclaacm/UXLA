@@ -35,13 +35,13 @@ Move into the directory:
 cd LearnUX
 ```
 
-In order to keep the project directory simple, the repository does not include all the modules you need to run 11ty. To install them, run:
+First and foremost we need to install 11ty. To do that, run:
 
 ```
 npm install --save-dev @11ty/eleventy
 ```
 
-This will tell 11ty to inspect the `package.json` file and install all neccesary modules. Once you have done that, you can build and run the website:
+This will tell npm to inspect the `package.json` file and install all neccesary modules, including 11ty. Once you have done that, you can build and run the website:
 
 ```
 npx @11ty/eleventy --serve
