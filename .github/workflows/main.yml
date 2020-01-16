@@ -1,4 +1,4 @@
-name: CI
+name: ZEIT
 
 on: [push]
 
@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v1
     - name: ZEIT Now Deployment
       uses: amondnet/now-deployment@v1
       with:
