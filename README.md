@@ -59,7 +59,7 @@ The GitHub repo has already been configured to automatically deploy, or publish,
 
 Meanhile, when we as a team collectively agree to merge a branch into the master branch, a script will be fired to create a *production* deployment. This is the final product that will be made public to the world, and thus should be deployed with care.
 
-As of 01/20, the production deployment can be found here: [learnux.tfukaza.now.sh](https://learnux.tfukaza.now.sh/)
+As of 01/20, the production deployment can be found here: [uxla.now.sh](https://uxla.now.sh/)
 
 ### Deploying Locally
 
