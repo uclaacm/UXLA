@@ -1,4 +1,4 @@
-# LearnUX (temp name)
+# UXLA
 
 LearnUX is a web portal providing crash courses on basic design concepts, such as color theory and composition. It is targeted towards people who have engineering backgrounds, but are interested in UX/UI design.
 
@@ -23,14 +23,14 @@ In your terminal, go to the directory you want to create the project folder.
 Clone the GitHub repository by running:
 
 ```
-git clone https://github.com/uclaacm/LearnUX.git
+git clone https://github.com/uclaacm/UXLA.git
 ```
 
-This should create a new directory called `LearnUX`
+This should create a new directory called `UXLA`
 Move into the directory:
 
 ```
-cd LearnUX
+cd UXLA
 ```
 
 First and foremost we need to install 11ty. To do that, run:
