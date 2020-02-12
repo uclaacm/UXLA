@@ -42,8 +42,10 @@ npm install --save-dev @11ty/eleventy
 This will tell npm to inspect the `package.json` file and install all neccesary modules, including 11ty. Once you have done that, you can build and run the website:
 
 ```
-npx @11ty/eleventy --serve
+npm run serve
 ```
+
+(this runs npx @11ty/eleventy --serve)
 
 Go to your web browser and access `http://localhost:8080/`, and you should see the website up and running. Press `Ctrl + C` to stop the website.
 
