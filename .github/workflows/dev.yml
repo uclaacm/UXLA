@@ -15,10 +15,5 @@ jobs:
         zeit-token: ${{ secrets.ZEIT_TOKEN }}
         github-token: ${{ secrets.GITHUB_TOKEN }}
       env:
-<<<<<<< HEAD
-          NOW_ORG_ID: team_IXK7Ey9R3wqb4J1Pqh4OYfnb
-          NOW_PROJECT_ID: QmVBiGrsEQtCwDyUZb2ZHfB4y5qGLhJU4vu8qNSiarYo5D
-=======
           NOW_ORG_ID: yF539Eg0ZhDQiKXD0aBCIjCO
           NOW_PROJECT_ID: QmPzLRW3xQVzcQwnxAAyQUKYn1fU1XYb8kuowp9Y5Ygm2q
->>>>>>> 2dcea57f9581a950e3b50843b20e43245dce79df
