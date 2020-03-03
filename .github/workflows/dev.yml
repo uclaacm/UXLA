@@ -12,13 +12,8 @@ jobs:
     - name: ZEIT Now Deployment
       uses: amondnet/now-deployment@v1
       with:
-        # zeit.co token
         zeit-token: ${{ secrets.ZEIT_TOKEN }}
-        #  This is required if your deployment is made on team project.
-        #zeit-team-id: # optional
-        # 
-        #now-args: # optional, default is 
-        # 
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        # if you want to create github deployment, set true, default: false
-        #github-deployment: # optional, default is false
+      env:
+          NOW_ORG_ID: team_IXK7Ey9R3wqb4J1Pqh4OYfnb
+          NOW_PROJECT_ID: QmVBiGrsEQtCwDyUZb2ZHfB4y5qGLhJU4vu8qNSiarYo5D
