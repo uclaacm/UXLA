@@ -1,0 +1,4 @@
+{ 
+    "layout": "_includes/post.html",
+    "tags": ["posts"] 
+}
