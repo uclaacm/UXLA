@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+<head>
+    <style>
+        body {
+            background-color: #D0D0D0;
+        }
+
+        div {
+            border-radius: 25px;
+            width: 400px;
+            height: 200px;
+            background: #181818;
+            -webkit-box-shadow: 0px 10px 56px -11px rgba(0,0,0,1);
+            -moz-box-shadow: 0px 10px 56px -11px rgba(0,0,0,1);
+            box-shadow: 0px 10px 56px -11px rgba(0,0,0,1);
+            grid-column: 2 / 3;   
+            grid-row: 2 / 3;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 400px 1fr;
+            grid-template-rows: 1fr 200px 1fr;
+            text-align: center;
+        }
+
+        p {
+            padding: 20px 35px 0px;
+            font-family: Poppins;
+            font-size: 18px;
+            font-style: normal;
+            color: #bbbbbb;
+        }
+
+        p + p {
+            padding: 0px 35px 0px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: italic;
+            color: #746c6c;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <p>"Nobody realizes that some people expend tremendous energy merely to be normal."</p>
+            <p>Albert Camus</p>
+        </div>
+    </main>
+</body>
+
+</html>
+
+<!-- 
+The box is 400px by 200px.
+The box has rounded edges, and a shadow behind it.
+The box is centered vertically and horizontally on the screen.
+The text uses Google fonts to display a fancy font of your choice.
+The texts should be aligned centrally.
+The main quote and the name should have different font size/font color.
+The background is some other color than white
+The backgound (whatever color you choose) should span the whole page - no margins or whitespace along the edegs. -->
