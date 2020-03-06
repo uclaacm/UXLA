@@ -3,7 +3,16 @@
     <head> 
         <style> 
             @import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+            body{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto auto;
+                background-color: #CEE8FA;
+                grid-column-start: 2;
+                grid-row-start: 2;
+            }
             div{
+                justify-self: center;
                 color:white;
                 text-align: center;
                 background-color: #171717;
@@ -18,11 +27,6 @@
             }
             p:nth-child(2) {
                 font-size:10px;
-            }
-            body{
-                display: grid;
-                grid-template-columns: auto auto auto;
-                background-color: #CEE8FA;
             }
         </style> 
     </head> 
