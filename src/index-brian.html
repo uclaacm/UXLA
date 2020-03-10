@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+    background-color:rgba(189, 188, 154, 0.527);
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+div{
+    height:200px;
+    width:400px;
+    display:grid;
+    grid-column-start: 2;
+    grid-row-start:2;
+    background-color:rgba(89, 78, 150, 0.863);
+    align-items:center;
+    justify-items:center;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 8px 100px 100px rgba(0, 0, 0, 0.2), 0 10px 30px 10px rgba(0, 0, 0, 0.19);
+}
+p{
+    display:flex;
+    font-size: 120%;
+    font-family: 'Roboto', sans-serif;
+    padding: 5%,5%;
+}
+p:nth-child(2){
+    font-size:100%;
+    font-family:monospace;
+}
+</style>
+</head>
+<body>
+    <main>
+        <div>
+            <p>“Nobody realizes that some people expend tremendous energy merely to be normal.”</p>
+            <p>Albert Camus</p>
+        </div>
+    </main>
+</body>
+</html>
