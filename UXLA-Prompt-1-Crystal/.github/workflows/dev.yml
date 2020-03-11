@@ -1,0 +1,19 @@
+name: ZEIT dev
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: ZEIT Now Deployment
+      uses: amondnet/now-deployment@v1
+      with:
+        zeit-token: ${{ secrets.ZEIT_TOKEN }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+      env:
+          NOW_ORG_ID: team_IXK7Ey9R3wqb4J1Pqh4OYfnb
+          NOW_PROJECT_ID: QmVBiGrsEQtCwDyUZb2ZHfB4y5qGLhJU4vu8qNSiarYo5D

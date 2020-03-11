@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap');
+
+body {
+    background-color: rgb(24, 24, 24);
+}
+
+
+
+h1, h2, h3, h4{
+    font-family: 'Poppins';
+    color:white;
+}
+
+p, li{
+    font-family: 'Open Sans';
+    color:rgb(202, 202, 202);
+    line-height: 2em;
+}   
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: capitalize;
+    position: relative;
+    margin-bottom:40px;
+}
+
+
+h2:after{
+    background: linear-gradient(90deg, rgba(206,206,206,1) 0%, rgba(145,145,145,1) 55%, rgba(126,144,144,1) 100%);    
+    height:10px;
+    width:10%;
+    content: '';
+    position: relative;
+    opacity:0.1;
+    bottom:-2px;
+    left:-0%;
+    display: block;
+}
+
+h4{
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:rgb(63, 63, 63);
+}
+
+p span{
+    background-color: rgb(41, 41, 41);
+    border-radius: 4px;
+    margin:2px 5px;
+    padding:5px;
+    font-size: 12px;
+    font-family: 'Oxygen Mono';
+}
+
+.code{
+    background-color: rgb(31, 34, 39);
+    border-radius: 10px;
+    width:100%;
+    padding:10px;
+    box-shadow: 0px 12px 30px 0px rgba(14, 14, 14, 0.51);
+
+}
+
+.code p{
+    font-family: 'Oxygen Mono';
+    margin:10px!important;
+    font-size:15px!important; 
+}
+
+.code > p > span{
+    color:rgb(31, 100, 133);
+    background-color: transparent;
+    margin:0px;
+    padding: 0px;
+    font-size: 15px;
+}
+
+.divider{
+    background-color: rgb(80, 80, 80);
+    height:6px;
+    width:6px;
+    border-radius: 3px;
+    margin:60px 0px;
+    position: relative;
+    margin-left: Calc(50% - 3px);
+}
+
+.divider:after, .divider:before{
+    background-color: rgb(80, 80, 80);
+    height:6px;
+    width:6px;
+    content: '';
+    position: absolute;
+    border-radius: 3px;
+}
+
+.divider:after{
+    left:50px
+}
+
+.divider:before{
+    left:-50px
+}
+
+.header{
+    height:500px;
+    /*width: Calc(40% + 300px);
+    margin-left:Calc(30% - 150px);*/
+    width: 600px;
+    margin-left:Calc(50% - 300px);
+    position: relative;
+    overflow: hidden;
+}
+
+.header h1{
+
+    background: linear-gradient(90deg, rgba(255,182,20,1) 0%, rgba(250,73,98,1) 55%, rgba(246,91,117,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header img{
+    position: absolute;
+    width:100%;
+
+}
+
+.header div{
+    
+    position: relative;
+    top:250px;
+    transform: translateY(-50%);
+}
+
+.text{
+    width: 600px;
+    margin-left:Calc(50% - 300px);
+}
+
+.container{
+    width:90%;
+    margin-left:5%;
+    margin-bottom: 100px;
+}
+
+.container > h2{
+    background: linear-gradient(90deg, rgba(255,182,20,1) 0%, rgba(250,73,98,1) 55%, rgba(246,91,117,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text p{
+    display:block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.prompt{
+
+    width:100%;
+    height:100px;
+    margin:80px 0px 50px 0px;
+    position: relative;
+
+}
+.prompt > div{
+    position: absolute;
+    width:104%;
+    left:-10%;
+    padding:20px 8%;
+    border-radius:10px;
+    background-color: rgb(32, 32, 32);
+    box-shadow: 0px 12px 30px 0px rgba(14, 14, 14, 0.51);
+
+}
+
+.prompt > div h2{
+    font-size: 20px;
+    margin:5px 0px;
+    letter-spacing: 0px;
+}
+
+.prompt > div h4{
+    color:rgb(73, 73, 73);
+    font-size: 15px;
+    margin: 2px 0px;
+    line-height: 1em;
+
+}
+
+.prompt .difficulty{
+    position: absolute;
+    top:28px;
+    right:60px;
+
+}
+
+
+
+.difficulty span{
+    margin: 0px 5px;
+    height:10px;
+    width:10px;
+    border-radius: 5px;
+    background-color: rgb(102, 102, 102);
+    display: inline-block;
+}
+
+.difficulty h4{
+    margin-right: 20px!important;
+    margin-bottom: 5px!important;
+   
+    font-size: 12px!important;
+}
+
+.due{
+    position: absolute;
+    top:28px;
+    right:220px;
+
+}
+.due h4{
+    margin-right: 20px!important;
+    margin-bottom: 4px!important;
+   
+    font-size: 12px!important;
+}
+
+.due p {
+    font-size: 12px;
+    margin:0px;
+    line-height: 1em;
+    color:rgb(153, 153, 153);
+}
+
+.prompt div h2:after, .prompt div h2:before{
+    display: none;
+}
+
+
+.note, .warning{
+
+    width:100%;
+    height:100px;
+    margin:40px 0px;
+    position: relative;
+}
+
+.note > span, .warning > span{
+    font-family: 'Poppins';
+    color: rgb(223, 223, 223);
+    position: absolute;
+    background-color: rgb(53, 53, 53);
+    border-radius: 15px;
+    z-index:1;
+    top:-10px;
+    left:-10px;
+    width:30px;
+    height:30px;
+    box-shadow:0px 12px 30px 0px rgba(14, 14, 14, 0.51);
+    display: none;
+
+}
+.note> div{
+    position: absolute;
+    width:100%;
+    left:-8%;
+    padding:0px 8%;
+    border-radius:10px;
+    border: 2px solid #333333;
+}
+
+.note p{
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.4em;
+}
+
+.warning> div{
+    position: absolute;
+    width:100%;
+    left:-8%;
+    padding:0px 8%;
+    border-radius:10px;
+    border: 2px solid rgb(255, 78, 116);
+
+}
+
+.warning p{
+    
+    font-size: 15px;
+    font-style: italic;
+    line-height: 1.4em;
+}
+
+.image{
+    width:100%;
+}
+
+.image img{
+    width:100%;
+}
+
+.image .caption{
+    font-size: 12px;
+    color: #616161;
+    margin:10px 0px;
+}
+
+.footer{
+    width:100%;
+    height:300px;
+}
