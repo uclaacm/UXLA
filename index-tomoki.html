@@ -1,1 +1,77 @@
-<h1>Hi</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+    /* Import Google Fonts*/  
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap');
+
+    body{
+        /* by default, elements in the body tag, which encompasses all elements in the page, has a little margin
+        We want to remve that */
+        margin:0px;
+
+        background-color: #c5c5c5;
+    }
+    
+
+    main {
+
+        /* This enables the grid layout*/
+        display: grid;
+        /* The 'fr' unit will take whatever value is left after applying '%' abd 'px', and divide them evenly  
+        For example, if your screen is 1000px wide, below CSS will divide your screen into 300px, 400p, and 300px*/
+        grid-template-columns: 1fr 400px 1fr;
+        grid-template-rows: 1fr 200px 1fr;
+        grid-template-areas:  
+                    ". . . "
+                    ". main ."
+                    ". . .";
+
+        /* Specify height so grid will know where the vertical center is.
+        'vh' is a unit where 100vh = height of screen */
+        height:100vh;
+    }
+
+    div{
+        /* Specify where to display this div in the grid.
+        The name should be whatever that was specified in css-template-areas */
+        grid-area: main;
+        /* Specify background and shadows */
+        background-color: #1e1f20;
+        box-shadow:0px 10px 30px 0pc #313438b6; 
+        /* Round the edge */
+        border-radius: 10px;
+        /* Set the margin inside the textbox  */
+        padding: 30px;
+        /* center text */
+        text-align: center;
+    }
+
+    p{
+        font-family: 'Baloo Chettan 2';
+    }
+
+    /* Select the main quote */
+    p:nth-of-type(1){
+        font-size: 18px;
+        color:#bebebe;
+    }
+
+    /* Select the name */
+    p:nth-of-type(2){
+        font-size: 15px;
+        color:#727272;
+    }
+
+</style>
+</head>
+<body>
+    <main>
+        <div>
+            <p>“Nobody realizes that some people expend tremendous energy merely to be normal.”</p>
+            <p>Albert Camus</p>
+        </div>
+    </main>
+</body>
+</html>
